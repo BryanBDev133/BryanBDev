@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+   
+    <title></title>
+
+  
+
+
+
+
+<link href="bootstrap.css" rel="stylesheet">
+
+<script src="bootstrap.js"></script>
+<script src="popper.js"></script>
+<script src="jquery-3.7.1.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+
+      #sidebar {
+    max-width: 300px;
+    min-width: 300px;
+    transition: all 0.35s ease-in-out;
+    box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
+   
+    margin-left: 25px;
+    margin-right: 25px;
+  
+}
+    </style>
+
+    
+  </head>
+  <body >
+   
+
+        <div class="row">
+                   <img src="headerlogo.png" style= "width: 250px; height: 250px; margin: 0 auto; margin-bottom: 20px;" > 
+            
+        </div>
+         
+        <hr style="border-bottom: 5px dotted rgb(0, 0, 0);"><hr>
+
+        
+  <main> 
+    
+
+    <div class="row"> <!--start-->    
+      
+
+                <div class="row"> <!--cards start-->
+                  
+                  <div class="col-md-3" style="height:250px;">
+                 
+                
+                  </div> <!--filler ends-->
+
+
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="books1.png" class="card-img-top" style="width: 225px; height: 150px; margin: 0 auto" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Resume</h5>
+                              <p class="card-text"> Full work and Education History and a Summary of Acquired Skills</p>
+                              <!-- Button trigger modal -->
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#resume">
+                                  RESUME
+                                    </button>
+                            </div>
+    
+                    </div>
+                    
+                      </div> <!--resume ends-->
+
+                      <!--Resume Modal-->
+                      <div class="modal fade" id="resume" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                          <div class="modal-content" >
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel"></h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body skill" > 
+                      
+                              <iframe src="resume.html" style="height: 600px; width: 100%;" title="Resume"></iframe> 
+                      
+                              
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+              <!--resume ends-->
+
+                      
+
+
+                      <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="skills.jpg" class="card-img-top" style="width: 225px; height: 150px; margin: 0 auto" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Skills</h5>
+                              <p class="card-text"> Detailed skills list including coursework, assignments, readings and independent projects</p>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#skill">
+                                  Skills
+                                    </button>
+                            </div>
+    
+                    </div>
+                    
+                      </div>
+
+
+                      <!--skills modal-->
+
+
+                      <div class="modal fade" id="skill" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                          <div class="modal-content" style="background-color: coral;">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel"></h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body skill" > 
+                      
+                              <iframe src="Skills.html" style="height: 600px; width: 100%;" title="Resume"></iframe> 
+                      
+                              
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                
+
+
+
+
+                      <!--About Me -->
+
+                      <div class="modal fade" id="about" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog .modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">About</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body skill" > 
+                      
+                              <iframe src="About.html" height="600" width="400" title="About"></iframe> 
+                      
+                              
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <div class="col-md-3">
+                        <div class="card" style="width: 18rem; ">
+                            <img src="about.jpg" class="card-img-top" style="width: 225px; height: 150px; margin: 0 auto" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">About Me</h5>
+                              <p class="card-text"> Who I am and my history with techncology</p>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#about">
+                                About
+                                  </button>
+                            </div>
+    
+                    </div>
+                    
+                      </div>
+                      
+                     
+      
+                     
+
+                </div> <!--cards end-->        
+
+                </div>               
+                
+            
+                
+            </div><!--right side end-->
+            <hr style="border-bottom: 5px dotted rgb(0, 0, 0);"><hr>
+
+
+
+
+            <div class="row"> <!--start-->    
+      
+
+              <div class="row"> <!--cards2 start-->
+                
+                <div class="col-md-3" style="height:250px;">
+               
+              
+                </div> <!--filler ends-->
+
+          
+
+                  <div class="col-md-3">
+                      <div class="card" style="width: 18rem;">
+                          <img src="study.jpg" class="card-img-top" style="width: 225px; height: 150px; margin: 0 auto" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Reading List</h5>
+                            <p class="card-text"> All relevant sources of reading and studying I have completed. Includes ongoing learning such as journals, blogs and magazines</p>
+                            <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#resume">
+                                Literature
+                                  </button>
+                          </div>
+  
+                  </div>
+                  
+                    </div> <!--resume ends-->
+
+                    <!--Reading Modal-->
+                    <div class="modal fade" id="resume" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                        <div class="modal-content" >
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body skill" > 
+                    
+                            <iframe src="resume.html" style="height: 600px; width: 100%;" title="Resume"></iframe> 
+                    
+                            
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            <!--reading ends-->
+
+                    
+
+                    <div class="col-md-3">
+                      <div class="card" style="width: 18rem;">
+                          <img src="work.png" class="card-img-top" style="width: 225px; height: 150px; margin: 0 auto" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title"><hs>Work</hs>
+                            <p class="card-text"> Completed and ongoing projects</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#skill">
+                                Work
+                                  </button>
+                          </div>
+  
+                  </div>
+                  
+                    </div>
+
+
+                    <!--work modal-->
+
+
+                    <div class="modal fade" id="skill" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                        <div class="modal-content" style="background-color: coral;">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body skill" > 
+                    
+                            <iframe src="Skills.html" style="height: 600px; width: 100%;" title="Resume"></iframe> 
+                    
+                            
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
+
+
+
+
+                    <!--Miscellamneous -->
+
+                    <div class="modal fade" id="about" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog .modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">About</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body skill" > 
+                    
+                            <iframe src="About.html" height="600" width="400" title="About"></iframe> 
+                    
+                            
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="col-md-3">
+                      <div class="card" style="width: 18rem; ">
+                          <img src="misc.jpg"card-img-top" style="width: 225px; height: 150px; margin: 0 auto" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Miscellaneous</h5>
+                            <p class="card-text"> Accomplishemnts, side projects and related personal endevours </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#about">
+                              Misc
+                                </button>
+                          </div>
+  
+                  </div>
+                  
+                    </div>
+                    
+                   
+    
+                   
+
+              </div> <!--cards end-->        
+
+              </div>               
+              
+          
+              
+          </div><!--right side end-->
+
+
+
+
+
+
+           
+           
+
+</main>
+
+    </body>
+</html>
